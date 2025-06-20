@@ -1369,3 +1369,48 @@
 			new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic, WEAR_IN_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, WEAR_IN_BACK)
 	..()
+
+///Royal Marines Recruiter [NIGHTMARE INSERT]
+
+/datum/equipment_preset/survivor/hybrisa/recruiter
+	name = "Survivor - Hybrisa - RMC Recruiter"
+	faction = FACTION_TWE
+	faction_group = list(FACTION_TWE, FACTION_SURVIVOR)
+	paygrades = list(PAY_SHORT_RMC3 = JOB_PLAYTIME_TIER_0)
+	idtype = /obj/item/card/id/dogtag
+	assignment = "RMC Recruiter"
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	access = list(ACCESS_CIVILIAN_PUBLIC)
+
+/datum/equipment_preset/survivor/hybrisa/recruiter/load_gear(mob/living/carbon/human/new_human)
+	var/obj/item/clothing/under/marine/officer/royal_marine/uniform = new()
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/ranks/marine/e3(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/royal_marine(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/l905/full(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/royal_marine(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/royal_marine/knife, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel, WEAR_BACK)
+	..()
+
+/datum/equipment_preset/survivor/hybrisa/recruiter/leader
+	name = "Survivor - Hybrisa - RMC Recruiter - Officer In Charge"
+	faction = FACTION_TWE
+	faction_group = list(FACTION_TWE, FACTION_SURVIVOR)
+	paygrades = list(PAY_SHORT_RNOW = JOB_PLAYTIME_TIER_0)
+	idtype = /obj/item/card/id/dogtag
+	assignment = "RMC Officer In Charge"
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	access = list(ACCESS_CIVILIAN_PUBLIC)
+
+/datum/equipment_preset/survivor/hybrisa/recruiter/leader/load_gear(mob/living/carbon/human/new_human)
+	var/obj/item/clothing/under/marine/officer/royal_marine/uniform = new()
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/jacket/marine/rmc/service(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/ranks/marine/e6(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/royal_marine(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/l905/full(new_human), WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/royal_marine(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/royal_marine/knife, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel, WEAR_BACK)
+	..()
