@@ -133,6 +133,13 @@
 	desc = parent_type::desc + " This pair contains prescription lenses."
 	prescription = TRUE
 
+/obj/item/clothing/glasses/hud/health/xeno
+	name = "XenoMate HUD"
+	desc = "Testing stuff."
+	hud_type = MOB_HUD_XENO_STATUS
+	req_skill = NONE
+	req_skill_level = null
+
 /obj/item/clothing/glasses/hud/sensor
 	name = "\improper SensorMate HUD"
 	desc = "A much older heads-up display that displays the last known biometric data from suit sensors of any given individual."
