@@ -1376,3 +1376,67 @@
 			new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic(new_human.back), WEAR_IN_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/device/flashlight/lantern(new_human.back), WEAR_IN_BACK)
 	..()
+
+
+//-------------------------------------------------------
+
+//////////////// CO SURV PRESETS ///////////////////
+////////////////////////////////////////////////////
+
+/datum/equipment_preset/survivor/hybrisa/administrator
+	name = "Survivor - Hybrisa - CO - Colony Administrator"
+	assignment = JOB_CHIEF_EXECUTIVE //Hybrisa is a very big colony, it'd have a high ranking guy in charge
+	faction = FACTION_WY
+	faction_group = FACTION_LIST_SURVIVOR_WY
+	skills = /datum/skills/civilian/survivor/colonyadmin
+	paygrades = list(PAY_SHORT_WYC9 = JOB_PLAYTIME_TIER_0)
+	job_title = JOB_CHIEF_EXECUTIVE
+	minimap_icon = "chief_man"
+	minimap_background = "background_wy_management"
+	idtype = /obj/item/card/id/silver/clearance_badge/manager
+	role_comm_title = "CA"
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	access = list( ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_BRIG, ACCESS_CIVILIAN_MEDBAY, ACCESS_CIVILIAN_COMMAND, ACCESS_WY_GENERAL, ACCESS_WY_COLONIAL, ACCESS_WY_MEDICAL, ACCESS_WY_SECURITY, ACCESS_WY_ENGINEERING, ACCESS_WY_FLIGHT, ACCESS_WY_RESEARCH, ACCESS_WY_EXEC, ACCESS_WY_PMC, ACCESS_WY_PMC_TL, ACCESS_WY_ARMORY, ACCESS_WY_SECRETS, ACCESS_WY_LEADERSHIP, ACCESS_WY_SENIOR_LEAD,)
+
+/datum/equipment_preset/survivor/hybrisa/administrator/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/liaison_suit/black(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/pmc/command/hvh(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/lockable(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bulletproof(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/vp78(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses(new_human), WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo/executive(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/survival/full(new_human), WEAR_L_STORE)
+	add_random_cl_survivor_loot(new_human)
+
+
+/datum/equipment_preset/survivor/hybrisa/nspa_commissioner
+
+	name = "Survivor - Hybrisa - CO - NSPA Commissioner"
+	assignment = JOB_NSPA_COM
+	faction_group = FACTION_LIST_SURVIVOR_NSPA
+	paygrades = list(PAY_SHORT_COM = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/cmb/co_survivor
+	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	idtype = /obj/item/card/id/nspa_gold
+	faction = FACTION_NSPA
+	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)
+
+/datum/equipment_preset/survivor/hybrisa/nspa_commissioner/load_gear(mob/living/carbon/human/new_human)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/hybrisa/nspa_officer(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/CMB/hybrisa/nspa_formal_jacket(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/hybrisa/nspa_peaked_cap_gold(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/black(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/restraint/handcuffs(new_human.back), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/iasf_para_belt/custom/full(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud/blue(new_human), WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/survival/full(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/shotgun(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/buckshot(new_human), WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/buckshot(new_human), WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/buckshot(new_human), WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/pump/dual_tube/cmb/m3717(new_human), WEAR_J_STORE)

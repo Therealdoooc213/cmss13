@@ -424,6 +424,21 @@ CIVILIAN
 		SKILL_OVERWATCH = SKILL_OVERWATCH_TRAINED,
 	)
 
+/datum/skills/civilian/survivor/colonyadmin
+	name = "Colony Administrator"
+	skills = list(
+		SKILL_ENDURANCE = SKILL_ENDURANCE_SURVIVOR,
+		SKILL_LEADERSHIP = SKILL_LEAD_MASTER,
+		SKILL_MEDICAL = SKILL_MEDICAL_TRAINED,
+		SKILL_ENGINEER = SKILL_ENGINEER_NOVICE,
+		SKILL_CONSTRUCTION = SKILL_CONSTRUCTION_TRAINED,
+		SKILL_VEHICLE = SKILL_VEHICLE_SMALL,
+		SKILL_POLICE = SKILL_POLICE_SKILLED,
+		SKILL_FIREMAN = SKILL_FIREMAN_SKILLED,
+		SKILL_FIREARMS = SKILL_FIREARMS_TRAINED,
+		SKILL_INTEL = SKILL_INTEL_TRAINED,
+	)
+
 /datum/skills/civilian/fax_responder
 	name = "Comms Relay Worker" //Used for fax responder presets, allowing use of appropriate HUDs and basics.
 	skills = list(
