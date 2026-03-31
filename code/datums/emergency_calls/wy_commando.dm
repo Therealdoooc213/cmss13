@@ -15,7 +15,7 @@
 /datum/emergency_call/wy_commando/New()
 	..()
 	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Nisshoku responding to your distress call. We are boarding. Any hostile actions will be met with lethal force."
-	objectives = "Assist the USS Almayer's crew. Protect corporate assets and interests."
+	objectives = "Assist the [MAIN_SHIP_NAME]'s crew. Protect it's Corporate Liaison and Commanding Officer, and eliminate all hostile threats."
 
 
 /datum/emergency_call/wy_commando/create_member(datum/mind/M, turf/override_spawn_loc)
