@@ -17,7 +17,7 @@
 
 /datum/spaceport/cmb
 	name = "Anchorpoint Station"
-	docking_message = "This is the Anchorpoint Colonial Marshals Bureau, we're initiating boarding procedure to investigate your distress signal."
+	docking_message = "This is Chief Deputy Marshal Whittaker with the Colonial Marshal Bureau, Anchorpoint Station. We're investigating the nature of your distress signal. Initiate docking procedures at tower four."
 	allies = list(
 		/datum/emergency_call/cmb/riot_control,
 		/datum/emergency_call/cmb/anchorpoint, //Marine detachment.
@@ -28,6 +28,11 @@
 	docking_message = "Attention, USCM vessel. You have encroached on UPP territory. We are launching umbilical cords and deploying a squad to investigate the nature of your distress."
 	allies = list(
 		/datum/emergency_call/upp/friendly,
+	)
+
+/datum/spaceport/upp/hostile //Depending on what intel and the officer in charge, the UPP would probably have different responses to a burning USCM vessel entering their territory.
+	allies = list(
+		/datum/emergency_call/upp/hostile,
 	)
 
 /datum/spaceport/vanguard
@@ -47,14 +52,14 @@
 
 /datum/spaceport/clf //Any ERT regardless of friend or foe is going to be a round-end state, which is the goal of FTL.
 	name = "Irkala Station" //Disguised IFF signature, or something. The station name shows up at the start of hijack so I don't want people to meta it.
-	docking_message = "Attention, G.I's. You are trespassing on our soveirgn territory, expect no forgiveness."
+	docking_message = "You are trespassing on our soveirgn territory, G.I's. expect no forgiveness."
 	allies = list(
 		/datum/emergency_call/clf,
 	)
 
 /datum/spaceport/pmc
 	name = "Tenshoku Station"
-	docking_message = "Attention, USCM vessel. We are launching umbilical cords and deploying a squad to investigate the nature of your distress."
+	docking_message = "Attention, USCM vessel. Initiate docking procedures immediately, we are deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2177."
 	allies = list(
 		/datum/emergency_call/pmc,
 	)
