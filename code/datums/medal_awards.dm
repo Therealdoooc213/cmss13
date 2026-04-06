@@ -359,8 +359,6 @@ GLOBAL_LIST_INIT(xeno_medals, list(XENO_SLAUGHTER_MEDAL, XENO_RESILIENCE_MEDAL, 
 		if(xeno.tier == 0) // Don't award larva or facehuggers
 			if(!as_admin || !isqueen(xeno))  // Don't award queens unless admin (She is tier 0 for whatever reason)
 				continue
-			if(xeno.caste_type == XENO_CASTE_PREDALIEN)
-				continue
 		var/recipient_name = xeno.real_name
 		recipient_castes[recipient_name] = xeno.caste_type
 		recipient_mobs[recipient_name] = xeno
