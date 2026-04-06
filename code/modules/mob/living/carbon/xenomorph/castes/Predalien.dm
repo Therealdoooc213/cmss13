@@ -21,7 +21,7 @@
 	tacklestrength_max = 10
 
 	is_intelligent = TRUE
-	tier = 1
+	tier = 0 //So they can't transmute.
 	attack_delay = -2
 	can_be_queen_healed = FALSE
 
@@ -48,7 +48,7 @@
 	pixel_x = -16
 	old_x = -16
 	mob_size = MOB_SIZE_BIG
-	tier = 1
+	tier = 0
 	organ_value = 20000
 	age = XENO_NO_AGE //Predaliens are already in their ultimate form, they don't get even better
 	show_age_prefix = FALSE
