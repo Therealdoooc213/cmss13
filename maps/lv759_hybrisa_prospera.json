@@ -37,9 +37,11 @@
     ],
     "CO_insert_survivor_types": [
         "/datum/equipment_preset/survivor/hybrisa/iasf_commander",
-        "/datum/equipment_preset/survivor/clf/coordinator",
+        "/datum/equipment_preset/survivor/clf/coordinator"
+    ],
+    "CO_survivor_types": [
         "/datum/equipment_preset/survivor/hybrisa/administrator",
-        "/datum/equipment_preset/survivor/hybrisa/nspa_commissioner"
+        "/datum/equipment_preset/survivor/hybrisa/nspa_commander"
     ],
     "defcon_triggers": [
         3750,
