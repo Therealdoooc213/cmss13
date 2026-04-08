@@ -43,6 +43,11 @@
 	var/headset_item = /obj/item/device/radio/headset/almayer/mmpo
 
 /datum/equipment_preset/uscm_ship/uscm_police/mp/load_gear(mob/living/carbon/human/new_human)
+	new_human.nutrition = rand(NUTRITION_VERYLOW, NUTRITION_LOW)
+	new_human.equip_to_slot_or_del(new headset_item(new_human), WEAR_L_EAR) //if we're going to make them start naked, keep the headset so they can hear anything urgent while LARPing
+
+/datum/equipment_preset/uscm_ship/uscm_police/mp/dressed/load_gear(mob/living/carbon/human/new_human)
+	new_human.nutrition = rand(NUTRITION_NORMAL)
 	var/back_item = /obj/item/storage/backpack/satchel/sec
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
 		back_item = /obj/item/storage/backpack/security
@@ -62,7 +67,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/taperecorder(new_human), WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium(new_human), WEAR_R_STORE)
 
-/datum/equipment_preset/uscm_ship/uscm_police/mp/honorguard
+/datum/equipment_preset/uscm_ship/uscm_police/mp/dressed/honorguard
 	name = "USCM Military Police Honor Guard (MPHG)"
 	flags = EQUIPMENT_PRESET_EXTRA
 
@@ -74,7 +79,7 @@
 	minimap_icon = "honorguard"
 	headset_item = /obj/item/device/radio/headset/almayer/marine/mp_honor/com
 
-/datum/equipment_preset/uscm_ship/uscm_police/mp/honorguard/New()
+/datum/equipment_preset/uscm_ship/uscm_police/mp/dressed/honorguard/New()
 	. = ..()
 	access = get_access(ACCESS_LIST_MARINE_ALL)
 //*****************************************************************************************************/
@@ -118,6 +123,11 @@
 	service_over = list(/obj/item/clothing/suit/storage/jacket/marine/service/warden)
 
 /datum/equipment_preset/uscm_ship/uscm_police/warden/load_gear(mob/living/carbon/human/new_human)
+	new_human.nutrition = rand(NUTRITION_VERYLOW, NUTRITION_LOW)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/mcom/mw(new_human), WEAR_L_EAR)
+
+/datum/equipment_preset/uscm_ship/uscm_police/warden/dressed/load_gear(mob/living/carbon/human/new_human)
+	new_human.nutrition = rand(NUTRITION_NORMAL)
 	var/back_item = /obj/item/storage/backpack/satchel/sec
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
 		back_item = /obj/item/storage/backpack/security
@@ -182,6 +192,11 @@
 	service_over = list(/obj/item/clothing/suit/storage/jacket/marine/service/cmp)
 
 /datum/equipment_preset/uscm_ship/uscm_police/cmp/load_gear(mob/living/carbon/human/new_human)
+	new_human.nutrition = rand(NUTRITION_VERYLOW, NUTRITION_LOW)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/mcom/cmp(new_human), WEAR_L_EAR)
+
+/datum/equipment_preset/uscm_ship/uscm_police/cmp/dressed/load_gear(mob/living/carbon/human/new_human)
+	new_human.nutrition = rand(NUTRITION_NORMAL)
 	var/back_item = /obj/item/storage/backpack/satchel/sec
 	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
 		back_item = /obj/item/storage/backpack/security

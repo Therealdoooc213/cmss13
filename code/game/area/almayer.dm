@@ -256,6 +256,9 @@
 /area/almayer/shipboard/brig/starboard_hallway
 	name = "\improper Brig Starboard Hallway"
 
+/area/almayer/shipboard/brig/port_hallway
+	name = "\improper Brig Port Hallway"
+
 /area/almayer/shipboard/brig/perma
 	name = "\improper Brig Perma Cells"
 
@@ -300,6 +303,9 @@
 /area/almayer/shipboard/brig/warden_office
 	name = "\improper Brig Warden Office"
 	icon_state = "chiefmpoffice"
+
+/area/almayer/shipboard/brig/mess
+	name = "\improper Brig Mess Hall"
 
 /area/almayer/shipboard/sea_office
 	name = "\improper Lower Deck Senior Enlisted Advisor Office"

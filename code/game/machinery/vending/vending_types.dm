@@ -423,10 +423,8 @@
 
 
 /obj/structure/machinery/vending/security
-	name = "\improper SecTech"
-	desc = "A security equipment vendor."
-	product_ads = "Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
-	product_slogans = "Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
+	name = "\improper ColMarTech Military Police Equipment Vendor"
+	desc = "An automated Military Police equipment vendor."
 	icon_state = "sec"
 	icon_deny = "sec-deny"
 	req_access = list(ACCESS_MARINE_BRIG)
@@ -460,8 +458,8 @@
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/storage/donut_box = 2)
 
 /obj/structure/machinery/vending/security/riot
-	name = "\improper RiotTech"
-	desc = "A security riot equipment vendor."
+	name = "\improper ColMarTech Riot Military Police Vendor"
+	desc = "An automated Military Police riot equipment vendor."
 	hacking_safety = TRUE
 	wrenchable = FALSE
 	products = list(
