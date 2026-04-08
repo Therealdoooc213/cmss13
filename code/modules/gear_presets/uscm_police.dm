@@ -82,6 +82,7 @@
 /datum/equipment_preset/uscm_ship/uscm_police/mp/dressed/honorguard/New()
 	. = ..()
 	access = get_access(ACCESS_LIST_MARINE_ALL)
+
 //*****************************************************************************************************/
 
 /datum/equipment_preset/uscm_ship/uscm_police/warden
