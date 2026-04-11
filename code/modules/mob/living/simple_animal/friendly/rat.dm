@@ -52,6 +52,15 @@
 	response_harm = "stamps on"
 	holder_type = /obj/item/holder/rat/white/Milky
 
+/mob/living/simple_animal/small/mouse/rat/brown/bandholtz
+	name = "Marshal Bandholtz"
+	desc = "The Chief MP's pet rat. He eyes you up menacingly."
+	gender = MALE
+	response_help = "respectfully pets"
+	response_disarm = "pushes aside"
+	response_harm = "kicks"
+	holder_type = /obj/item/holder/rat/brown/bandholtz
+
 
 //Specific Pets for Frozen's Rat Collecting Competition
 

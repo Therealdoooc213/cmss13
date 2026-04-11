@@ -177,6 +177,10 @@
 	name = "Old Timmy"
 	desc = "An ancient looking rat from the old days of the colony."
 
+/obj/item/holder/rat/brown/bandholtz
+	name = "Marshal Bandholtz"
+	desc = "The Chief MP's pet rat. You should really put him down."
+
 /obj/item/holder/rat/pet
 	name = "Pet Rat"
 	desc = "This is someone's pet rat. I wonder what it's doing here."

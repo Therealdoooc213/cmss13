@@ -20,8 +20,8 @@
 	return active_cmp
 
 AddTimelock(/datum/job/command/warrant, list(
-	JOB_POLICE_ROLES = 15 HOURS,
-	JOB_COMMAND_ROLES = 5 HOURS
+	JOB_POLICE_ROLES = 75 HOURS,
+	JOB_COMMAND_ROLES = 25 HOURS
 ))
 
 /obj/effect/landmark/start/warrant

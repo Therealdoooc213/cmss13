@@ -120,3 +120,14 @@
 		return FALSE
 	ai_silent_announcement("Attendance requested at Corporate Liaison office.", ":Y", TRUE)
 	return ..()
+
+/obj/item/desk_bell/brig
+	name = "brig reception bell"
+	desc = "The cornerstone of any custom service job. This one is linked to ARES and will notify the Military Police upon being rung."
+	ring_cooldown_length = 60 SECONDS
+
+/obj/item/desk_bell/brig/ring_bell(mob/living/user)
+	if(broken_ringer)
+		return FALSE
+	ai_silent_announcement("Attendance requested at Brig Lobby.", ":P", TRUE)
+	return ..()

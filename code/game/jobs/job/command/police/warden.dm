@@ -18,7 +18,7 @@
 	active_warden = null
 
 AddTimelock(/datum/job/command/warden, list(
-	JOB_POLICE_ROLES = 10 HOURS
+	JOB_POLICE_ROLES = 40 HOURS
 ))
 
 /obj/effect/landmark/start/warden
