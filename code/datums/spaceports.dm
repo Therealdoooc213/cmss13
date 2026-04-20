@@ -10,9 +10,10 @@
 
 /datum/spaceport/uscm
 	name = "Mont-Blanc 41 LG Station"
-	docking_message = "Attention, USS Almayer. This is Captain Pereira with the Solar Devils Battalion. We are launching umbilical cords and deploying a fireteam now."
+	docking_message = "Attention, USS Almayer. This is Captain Pereira with the Solar Devils Battalion, for a ship from the Falcons you're far off course.. Initiate docking procedures, we're sending in a team now."
 	allies = list(
-		/datum/emergency_call/solar_devils, //10 marines was overpowered compared to the other ERT's considering solar devils have much better equipment than regular marines & the UPP.
+		/datum/emergency_call/solar_devils,
+		/datum/emergency_call/solar_devils_full,
 	)
 
 /datum/spaceport/cmb
@@ -30,11 +31,6 @@
 		/datum/emergency_call/upp/friendly,
 	)
 
-/datum/spaceport/upp/hostile //Depending on what intel and the officer in charge, the UPP would probably have different responses to a burning USCM vessel entering their territory.
-	allies = list(
-		/datum/emergency_call/upp/hostile,
-	)
-
 /datum/spaceport/vanguard
 	name = "Irkala Station"
 	docking_message = "Attention, USCM vessel. We are launching umbilical cords and deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2177."
@@ -43,18 +39,17 @@
 		/datum/emergency_call/contractors/covert,
 	)
 
+/datum/spaceport/vanguard/lancer
+	name = "Geldmann Outpost"
+	allies = list(
+		/datum/emergency_call/mercs/friendly, //left out elite since they're way too OP.
+	)
+
 /datum/spaceport/royal_commandos
 	name = "Port Yamanashi"
 	docking_message = "Attention, USCM vessel. Initiate docking procedures immediately, we are deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2177." //i liked the idea of the almayer docking itself to a port
 	allies = list(
 		/datum/emergency_call/royal_marines,
-	)
-
-/datum/spaceport/clf //Any ERT regardless of friend or foe is going to be a round-end state, which is the goal of FTL.
-	name = "Irkala Station" //Disguised IFF signature, or something. The station name shows up at the start of hijack so I don't want people to meta it.
-	docking_message = "You are trespassing on our soveirgn territory, G.I's. expect no forgiveness."
-	allies = list(
-		/datum/emergency_call/clf,
 	)
 
 /datum/spaceport/pmc
